@@ -154,8 +154,8 @@ add_definitions(${LLVM_DEFINITIONS_LIST})
 # that we wish to use
 llvm_map_components_to_libnames(LLVM_LIBS support core irreader mcjit native orcjit)
 set(LLVM_INCLUDEDIR ${LLVM_INCLUDE_DIRS})
-set(LLVM_INCLUDEDIR "/usr/include/llvm-13")
-set(LLVM_C_INCLUDEDIR "/usr/include/llvm-c-13/")
+set(LLVM_INCLUDEDIR "/usr/include/llvm-15")
+set(LLVM_C_INCLUDEDIR "/usr/include/llvm-c-15/")
 MESSAGE(STATUS "Using LLVM include dir: ${LLVM_INCLUDEDIR}")
 
 

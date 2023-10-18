@@ -21,7 +21,11 @@
 #include <llvm/Support/TargetSelect.h>
 #include <llvm/Transforms/IPO/PassManagerBuilder.h>
 #include <llvm/Support/SmallVectorMemoryBuffer.h>
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wnon-virtual-dtor"
 #include <llvm/Passes/PassBuilder.h>
+#pragma GCC diagnostic pop
 
 #include <llvm/ExecutionEngine/RTDyldMemoryManager.h>
 #include <llvm/ADT/None.h>
