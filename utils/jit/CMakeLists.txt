@@ -1,4 +1,4 @@
-include_directories( ${ENGINE_COMMON_INCLUDES} )
+include_directories( ${ENGINE_COMMON_INCLUDES} ${LLVM_INCLUDEDIR} ${LLVM_C_INCLUDEDIR})
 
 
 set(jit_LIB_SRCS
